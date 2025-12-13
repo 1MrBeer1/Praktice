@@ -1,0 +1,177 @@
+body {
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .label {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+        .bar {
+            width: 100%;
+            height: 7px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .bar-fill {
+            height: 100%;
+            background: #1e88e5;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+        .nav {
+            background: #ffffff;
+            padding: 25px 25px;
+            display: flex;
+            gap: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nav a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #1e88e5;
+        }
+	/* добавить в style.css */
+	.page { padding: 20px; }
+	.page h1 { margin-bottom: 12px; }
+	#file-tree div:hover { background: #fafafa; }
+	button { margin-right: 6px; padding: 6px 10px; border-radius:6px; border:none; background:#1e88e5; color:#fff; cursor:pointer; }
+	button:hover { opacity:0.95; }
+	textarea { font-family: monospace; font-size: 14px; }
+.file-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.file-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    background: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.file-item:hover {
+    background: #f0f7ff;
+    transform: scale(1.02);
+}
+
+.file-icon {
+    font-size: 40px;
+}
+
+.file-toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.upload-btn {
+    padding: 6px 12px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #eee;
+}
+
+.drop-zone {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border: 2px dashed #6aa8ff;
+    border-radius: 10px;
+    background: #f8fbff;
+    color: #6aa8ff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.path-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.path-input {
+    flex: 1;
+}
+
+.breadcrumbs {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.breadcrumbs span {
+    cursor: pointer;
+    color: #007bff;
+}
+
+.breadcrumbs span:hover {
+    text-decoration: underline;
+}
+
+.file-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.file-table th {
+    background: #f0f0f0;
+    padding: 8px;
+    border-bottom: 2px solid #ccc;
+}
+
+.file-table td {
+    padding: 6px;
+    border-bottom: 1px solid #eee;
+}
+
+.file-table tr:hover {
+    background: #f7faff;
+}
+
+.file-icon {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.drop-zone {
+    padding: 20px;
+    border: 2px dashed #6aa8ff;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: #f8fbff;
+    font-size: 16px;
+    color: #6aa8ff;
+}
+
+.upload-label {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: #f1f1f1;
+    cursor: pointer;
+}

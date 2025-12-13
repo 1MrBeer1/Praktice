@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Основная сетка -->
+<div class="grid">
+
+    <div class="card">
+        <div class="title">Здоровье</div>
+        <div id="health_status">Загрузка...</div>
+    </div>
+
+    <div class="card">
+        <div class="title">Использование</div>
+
+        <div class="label">CPU:</div>
+        <div class="bar"><div id="cpu_bar" class="bar-fill"></div></div>
+
+        <div class="label">Память:</div>
+        <div class="bar"><div id="ram_bar" class="bar-fill"></div></div>
+
+        <div class="label">Температура:</div>
+        <div class="bar"><div id="temp_bar" class="bar-fill"></div></div>
+    </div>
+
+    <div class="card">
+        <div class="title">Система</div>
+        <div id="system_info">Загрузка...</div>
+    </div>
+
+    <div class="card">
+        <div class="title">Статус</div>
+        <div id="admin_info">Загрузка...</div>
+    </div>
+
+</div>
+
+<script src="/static/js/dashboard.js"></script>
+
+</body>
+</html>
+
+{% endblock %}

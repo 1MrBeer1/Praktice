@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<link rel="stylesheet" href="/static/css/processes.css">
+
+<h2 class="mb-3">System Processes</h2>
+
+<div class="d-flex mb-3">
+    <input id="searchInput" class="form-control w-50" placeholder="Search process...">
+    <button class="btn btn-secondary ms-2" onclick="loadProcesses()">Search</button>
+</div>
+
+<div id="alert" class="alert alert-danger d-none"></div>
+
+<canvas id="cpuchart" height="120" class="mb-4"></canvas>
+
+<table class="table table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>PID</th>
+            <th>Name</th>
+            <th>CPU %</th>
+            <th>RAM %</th>
+            <th>Kill</th>
+        </tr>
+    </thead>
+    <tbody id="proc-body"></tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/js/processes.js"></script>
+
+{% endblock %}

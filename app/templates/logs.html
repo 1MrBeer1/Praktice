@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Logs</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/logs.css">
+</head>
+<body>
+
+<div class="toolbar">
+    <input id="unit" placeholder="unit (ssh.service)">
+    <input id="lines" type="number" value="200">
+    <button onclick="loadLogs()">Обновить</button>
+</div>
+
+<pre id="logs" class="logs"></pre>
+
+<script src="/static/js/logs.js"></script>
+</body>
+</html>
+{% endblock %}
